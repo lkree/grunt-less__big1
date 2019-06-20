@@ -1,0 +1,348 @@
+<link rel="stylesheet" href="/css/lax-tecDoc-pages/style.css">
+  <div class="car-type-toggler">
+    <input type="checkbox" id="car-type-toggler__checkbox" class="car-type-toggler__checkbox">
+    <label class="car-type-toggler__label" for="car-type-toggler__checkbox"></label>
+  </div>
+  <div class="tabn" id="">
+    <div class="lx-b-lax-col" style="width: 50%">
+      <div class="lx-b-lax-container">
+        <div class="lx-wht-vin">Поиск по VIN</div>
+
+        <div class="lx-b-search-container"><label>Поиск по VIN номеру</label>
+
+          <div class="lx-search-wrap-inp">
+            <form accept-charset="UTF-8" action="/laximo/vehicle_by_vin_frame" method="get"><input name="utf8" type="hidden" value="✓"> <input class="lx-search-inp" id="vin" name="vin" type="text"> <input class="lx-search-send" name="commit" type="submit" value="НАЙТИ">&nbsp;</form>
+          </div>
+        </div>
+
+        <div id="js-laximo-wizard-options"><div class="lx-b-search-container">
+          <label>Поиск по Frame номеру:</label>
+          <div class="lx-search-wrap-inp">
+            <form action="/laximo/vehicle_by_vin_frame" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+              <input type="text" name="vin" id="vin" class="lx-search-inp">
+              <input type="hidden" name="catalog_code" id="catalog_code" value="VCV201606">
+              <input type="submit" name="commit" value="НАЙТИ" class="lx-search-send">
+            </form>  </div>
+        </div>
+        </div>
+
+        <div id="js-laximo-chassis-options"><div class="lx-b-sel-tm">
+          <label>Поиск по шасси:</label>
+          <label>Серия:</label>
+          <form action="/laximo/vehicle_by_operation" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+            <div class="lx-search-wrap-inp">
+              <input type="text" name="fields[chassisSeries]" id="fields_chassisSeries" class="lx-search-inp" pattern="^[\w\d]{1,10}$">
+            </div>
+            <div class="lx-search-examp"> введите 1,10 символов (латинские буквы, цифры)  </div>
+            <br>
+
+            <label>Номер:</label>
+            <div class="lx-search-wrap-inp">          <input type="text" name="fields[chassis]" id="fields_chassis" class="lx-search-inp" pattern="^[\d]{1,6}$">
+            </div>
+            <div class="lx-search-examp"> введите 1,6 символов (латинские буквы, цифры)  </div>
+            <br>
+
+            <div class="lx-wrap-btn-sm">
+              <input type="hidden" name="operation" id="operation" value="searchByChassis">
+              <input type="hidden" name="catalog_code" id="catalog_code" value="VCV201606">
+              <input type="submit" name="commit" value="НАЙТИ" class="lx-btn-sm lx-choose-modif">
+            </div>
+          </form>    </div>
+        </div>
+
+        <div class="laximo"><a class="laximo__BtnAllCat" href="/laximo">Все каталоги</a></div>
+      </div>
+    </div>
+
+    <div class="laximo__bgImage"><img src="/images/design/laximoBrands/VOLVO.jpg"></div>
+  </div>
+  <div class="tabn hidden">
+    <div class="laximo-in-laxTecdoc">
+      <div class="lx-b-lax-col">
+        <div class="lx-b-lax-container">
+          <div class="lx-wht-vin">Поиск по VIN</div>
+
+          <div class="lx-b-search-container"><label>Поиск по VIN номеру</label>
+
+            <div class="lx-search-wrap-inp">
+              <form accept-charset="UTF-8" action="/laximo/vehicle_by_vin_frame" method="get"><input name="utf8" type="hidden" value="✓"> <input class="lx-search-inp" id="vin" name="vin" type="text"> <input class="lx-search-send" name="commit" type="submit" value="НАЙТИ">&nbsp;</form>
+            </div>
+            <div class="laximo"><a class="laximo__BtnAllCat" href="/laximo">Все каталоги</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="laximo-tecdoc-page__small-tip">
+        <p class="lx-b-lax-col laximo-tecdoc-page__small-tip-wrapper">
+          * Рекомендуем использовать поиск по VIN коду. Подбор запчастей по быстрому поиску может быть неточным и содержит не весь ассортимент.
+        </p>
+        <div class="lx-b-lax-col laximo-tecdoc-page__where-to-fin-VIN">
+          <div class="lx-b-lax-container lx-b-lax-container--tecdoc-lax-page">
+            <p>Где найти VIN-номер?</p>
+            <div class="tecdoc-lax-page__where-to-find-VIN-wrapper hidden">
+              <p>Вы всегда можете найти VIN-номер в свидетельстве о регистрации.</p>
+              <img class="tecdoc-lax-page__where-to-find-VIN-VIN-img" src="/images/sts-show-vin.jpg" alt="стс с VIN-номером">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tecDoc-in-laxTecdoc">
+      <section class="car-chooser-list-tecdoc" data-status="0">
+        <div class="car-chooser-list-tecdoc__point active" data-status="1">850</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">S40</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">S60</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">S80</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">S90</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">V40</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">V90</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">XC40</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">XC60</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">XC70</div>
+        <div class="car-chooser-list-tecdoc__point" data-status="0">XC90</div>
+        <a href="/tecdoc2/120/models.html" class="car-chooser-list-tecdoc__point">Все</a>
+      </section>
+      <ul class="td-model" style="display: block;">
+        <li data-start-year="2017" data-end-year="2019" data-name="XC40536" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/38232.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/default.gif" alt="Default" style="display: inline; width: 255px; margin-top: -11px; height: 150px;">          </div>
+            <div class="car-base-list-name">
+              XC40 (536)          </div>
+            <div class="car-base-list-date">
+              2017.10              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2017" data-end-year="2019" data-name="XC60II246" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/37773.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/7055/4_original_original.jpg" alt="4 original original"></div>
+            <div class="car-base-list-name">
+              XC60 II (246)          </div>
+            <div class="car-base-list-date">
+              2017.03              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2016" data-end-year="2019" data-name="S90II" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/36541.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/6150/2_original_original.jpg" alt="2 original original"></div>
+            <div class="car-base-list-name">
+              S90 II          </div>
+            <div class="car-base-list-date">
+              2016.03              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2016" data-end-year="2019" data-name="V90II" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/36540.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/6151/1_original_original.jpg" alt="1 original original"></div>
+            <div class="car-base-list-name">
+              V90 II          </div>
+            <div class="car-base-list-date">
+              2016.03              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2014" data-end-year="2019" data-name="XC90II" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/13084.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/4877/38_original_original.jpg" alt="38 original original"></div>
+            <div class="car-base-list-name">
+              XC90 II          </div>
+            <div class="car-base-list-date">
+              2014.09              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2012" data-end-year="2019" data-name="V40" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/10251.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3571/5_original_original.jpg" alt="5 original original"></div>
+            <div class="car-base-list-name">
+              V40 Наклонная задняя часть          </div>
+            <div class="car-base-list-date">
+              2012.03              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2010" data-end-year="2019" data-name="S60II" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/8616.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3566/4_original_original.jpg" alt="4 original original"></div>
+            <div class="car-base-list-name">
+              S60 II          </div>
+            <div class="car-base-list-date">
+              2010.04              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2008" data-end-year="2019" data-name="XC60" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/7583.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3579/26_original_original.jpg" alt="26 original original"></div>
+            <div class="car-base-list-name">
+              XC60          </div>
+            <div class="car-base-list-date">
+              2008.05              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2007" data-end-year="2019" data-name="XC70II" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/6391.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3581/27_original_original.jpg" alt="27 original original"></div>
+            <div class="car-base-list-name">
+              XC70 II          </div>
+            <div class="car-base-list-date">
+              2007.08              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2006" data-end-year="2019" data-name="S80IIAS" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/5520.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3569/21_original_original.jpg" alt="21 original original"></div>
+            <div class="car-base-list-name">
+              S80 II (AS)          </div>
+            <div class="car-base-list-date">
+              2006.03              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2004" data-end-year="2019" data-name="S40IIMS" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/5089.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3564/32_original_original.jpg" alt="32 original original"></div>
+            <div class="car-base-list-name">
+              S40 II (MS)          </div>
+            <div class="car-base-list-date">
+              2004.01              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2002" data-end-year="2019" data-name="XC90" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/4879.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3582/28_original_original.jpg" alt="28 original original"></div>
+            <div class="car-base-list-name">
+              XC90          </div>
+            <div class="car-base-list-date">
+              2002.10              ...
+              Выпускается          </div>
+          </div>
+        </li>
+        <li data-start-year="2000" data-end-year="2010" data-name="S60" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/4696.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3565/19_original_original.jpg" alt="19 original original"></div>
+            <div class="car-base-list-name">
+              S60          </div>
+            <div class="car-base-list-date">
+              2000.07              ...
+              2010.04          </div>
+          </div>
+        </li>
+        <li data-start-year="1998" data-end-year="2006" data-name="S80ITSXY" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/3550.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3568/33_original_original.jpg" alt="33 original original"></div>
+            <div class="car-base-list-name">
+              S80 I (TS, XY)          </div>
+            <div class="car-base-list-date">
+              1998.05              ...
+              2006.07          </div>
+          </div>
+        </li>
+        <li data-start-year="1997" data-end-year="2007" data-name="XC70CROSSCOUNTRY" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/4867.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3580/36_original_original.jpg" alt="36 original original"></div>
+            <div class="car-base-list-name">
+              XC70 CROSS COUNTRY          </div>
+            <div class="car-base-list-date">
+              1997.11              ...
+              2007.08          </div>
+          </div>
+        </li>
+
+        <li data-start-year="1996" data-end-year="1998" data-name="V90" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/1822.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3578/7_original_original.jpg" alt="7 original original"></div>
+            <div class="car-base-list-name">
+              V90 универсал          </div>
+            <div class="car-base-list-date">
+              1996.11              ...
+              1998.12          </div>
+          </div>
+        </li>
+        <li data-start-year="1996" data-end-year="1998" data-name="S90" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/1821.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3570/22_original_original.jpg" alt="22 original original"></div>
+            <div class="car-base-list-name">
+              S90          </div>
+            <div class="car-base-list-date">
+              1996.11              ...
+              1998.12          </div>
+          </div>
+        </li>
+        <li data-start-year="1995" data-end-year="2003" data-name="S40IVS" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/1513.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3563/18_original_original.jpg" alt="18 original original"></div>
+            <div class="car-base-list-name">
+              S40 I (VS)          </div>
+            <div class="car-base-list-date">
+              1995.07              ...
+              2003.12          </div>
+          </div>
+        </li>
+        <li data-start-year="1995" data-end-year="2004" data-name="V40VW" class="model-item" style="display: none;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/1514.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3572/6_original_original.jpg" alt="6 original original"></div>
+            <div class="car-base-list-name">
+              V40 универсал (VW)          </div>
+            <div class="car-base-list-date">
+              1995.07              ...
+              2004.06          </div>
+          </div>
+        </li>
+        <li data-start-year="1992" data-end-year="1997" data-name="850LW" class="model-item" style="display: block;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/57.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3543/10_original_original.jpg" alt="10 original original"></div>
+            <div class="car-base-list-name">
+              850 универсал (LW)          </div>
+            <div class="car-base-list-date">
+              1992.04              ...
+              1997.10          </div>
+          </div>
+        </li>
+        <li data-start-year="1991" data-end-year="1997" data-name="850LS" class="model-item" style="display: block;">
+          <div class="model-link-div" data-href="/tecdoc2/120/models/3925.html">
+            <div class="car-base-list-image" style="overflow: hidden;">
+              <img src="https://api.parts-soft.ru/system/car_base_model/3542/30_original_original.jpg" alt="30 original original"></div>
+            <div class="car-base-list-name">
+              850 (LS)          </div>
+            <div class="car-base-list-date">
+              1991.06              ...
+              1997.10          </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="/scripts/lax-tecDoc-pages/script.js" defer=""></script>
+  <script>
+    $( document ).ready(function() {
+      var wizard_div = $('#js-laximo-wizard-options');
+      $('#js-laximo-wizard-catalog').val('VCV201606 no no');
+      wizard_div.html("<div class=\"lx-b-search-container\">\n  <label>Поиск по Frame номеру:<\/label>\n  <div class=\"lx-search-wrap-inp\">\n    <form action=\"/laximo/vehicle_by_vin_frame\" accept-charset=\"UTF-8\" method=\"get\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" />\n      <input type=\"text\" name=\"vin\" id=\"vin\" class=\"lx-search-inp\" />\n      <input type=\"hidden\" name=\"catalog_code\" id=\"catalog_code\" value=\"VCV201606\" />\n      <input type=\"submit\" name=\"commit\" value=\"НАЙТИ\" class=\"lx-search-send\" />\n<\/form>  <\/div>\n<\/div>\n");
+      $('#js-laximo-chassis-options').html("<div class=\"lx-b-sel-tm\">\n      <label>Поиск по шасси:<\/label>\n      <label>Серия:<\/label>\n     <form action=\"/laximo/vehicle_by_operation\" accept-charset=\"UTF-8\" method=\"get\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" />\n          <div class=\"lx-search-wrap-inp\">\n            <input type=\"text\" name=\"fields[chassisSeries]\" id=\"fields_chassisSeries\" class=\"lx-search-inp\" pattern=\"^[\\w\\d]{1,10}$\" />\n          <\/div>\n          <div class=\"lx-search-examp\"> введите 1,10 символов (латинские буквы, цифры)  <\/div>\n          <br>\n  \n <label>Номер:<\/label>\n         <div class=\"lx-search-wrap-inp\">          <input type=\"text\" name=\"fields[chassis]\" id=\"fields_chassis\" class=\"lx-search-inp\" pattern=\"^[\\d]{1,6}$\"/>\n          <\/div>\n          <div class=\"lx-search-examp\"> введите 1,6 символов (латинские буквы, цифры)  <\/div>\n          <br>\n\n        <div class=\"lx-wrap-btn-sm\">\n          <input type=\"hidden\" name=\"operation\" id=\"operation\" value=\"searchByChassis\" />\n          <input type=\"hidden\" name=\"catalog_code\" id=\"catalog_code\" value=\"VCV201606\" />\n          <input type=\"submit\" name=\"commit\" value=\"НАЙТИ\" class=\"lx-btn-sm lx-choose-modif\"/>\n        <\/div>\n<\/form>    <\/div>\n");
+    });
+  </script>
